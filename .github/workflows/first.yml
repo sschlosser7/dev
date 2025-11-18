@@ -14,8 +14,10 @@ jobs:
     job2:
         name: Second_job
         runs-on: windows-latest
+        steps:
           - name: Step_One
             uses: actions/checkout@v4
           - name: Setp_Two
             run: "Get-ChildItem Env: | Sort-Object Name"
+
 
